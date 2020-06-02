@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="assets/css/ch5-theme/light-theme.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css" />
+
+    <title>CH5-Demo-Public</title>
+  </head>
+
+  <body>
+    <ch5-triggerview
+      id="page-main"
+      class="triggerview"
+      gestureable="false"
+      endless="false"
+    >
+      <ch5-triggerview-child id="page-home">
+        <ch5-import-htmlsnippet
+          url="components\home\page-home.html"
+        ></ch5-import-htmlsnippet>
+      </ch5-triggerview-child>
+      <ch5-triggerview-child id="page-ch5">
+        <ch5-import-htmlsnippet
+          url="components\ch5\page-ch5.html"
+        ></ch5-import-htmlsnippet>
+      </ch5-triggerview-child>
+      <ch5-triggerview-child id="page-bootstrap">
+        <ch5-import-htmlsnippet
+          url="components\bootstrap\page-bootstrap.html"
+        ></ch5-import-htmlsnippet>
+      </ch5-triggerview-child>
+    </ch5-triggerview>
+
+    <script src="assets/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/ch5-crcomlib/cr-com-lib.js"></script>
+    <script src="assets/js/ch5-crcomlib/ch5-custom.js"></script>
+  </body>
+</html>
